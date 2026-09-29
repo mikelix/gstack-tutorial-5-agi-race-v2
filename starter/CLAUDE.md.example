@@ -1,0 +1,24 @@
+# CLAUDE.md — AGI Race V2 project (example)
+
+## gstack
+Skills are installed in ~/.claude/skills/gstack. Use /office-hours and
+/plan-ceo-review before any new video brief, /plan-eng-review before building,
+/review after building, /retro after the analytics come back. Use /browse from
+gstack for all web browsing.
+
+## HyperFrames — non-negotiable rules
+1. Route through /hyperframes first. Motion pieces under ~10 s -> /motion-graphics;
+   multi-scene videos -> /general-video.
+2. Run `npx hyperframes doctor` and read the timeline before designing.
+3. Search the catalog before building any named element.
+4. Seek-safe: every state must be correct at any directly-sought time.
+   No wall-clock counters, no Web Audio graphs, no conflicting second fromTo.
+5. Holds over ~4 s: one monotonic micro-motion (e.g. scale 1 -> 1.008), never a loop.
+6. Critical typography in the centre third (must survive 9:16).
+7. Verify: lint -> check -> snapshot -> render -> ffprobe; then describe the contact sheet.
+
+## Project rules
+- source/ and analysis/ are read-only.
+- Characters are named by role, never by real name.
+- Never upload. Stop after renders + QA report.
+- Report only numbers measured from rendered files.
